@@ -14,4 +14,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Cocina.unity
+    guid: c1ecf07f8faf6c449bae61ec7e1eec4a
+  - enabled: 1
+    path: Assets/Scenes/Dormitorio.unity
+    guid: b296c78b47ebc0f4fa9593b573ffe173
+  - enabled: 1
+    path: Assets/Scenes/Estudio.unity
+    guid: d29609e1244714347aee4ae983b463fb
+  - enabled: 1
+    path: Assets/Scenes/SalaPrincipal.unity
+    guid: 39ef8e1f40e79a947b8ce849266b54f0
+  - enabled: 1
+    path: Assets/Scenes/Sotano.unity
+    guid: aa57a313d85cc5d4c8aed8ad98b358b8
+  - enabled: 1
+    path: Assets/Scenes/Zaguan.unity
+    guid: 60c264575a5950b4389f27e6ecae0445
   m_configObjects: {}
