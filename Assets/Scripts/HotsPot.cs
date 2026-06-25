@@ -3,10 +3,12 @@
 public class Hotspot : MonoBehaviour
 {
     public string sceneDestino;
+    public Texture2D cursorInteractivo;
 
     void OnMouseEnter()
     {
-        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+        if (cursorInteractivo != null)
+            Cursor.SetCursor(cursorInteractivo, Vector2.zero, CursorMode.Auto);
     }
 
     void OnMouseExit()
@@ -18,6 +20,7 @@ public class Hotspot : MonoBehaviour
     {
         if (sceneDestino != "")
         {
+            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
             SceneLoader.Instance.LoadScene(sceneDestino);
         }
     }
