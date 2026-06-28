@@ -1,0 +1,61 @@
+{
+  "documentos": [
+    {
+      "id_objeto": "doc_retrato_familiar",
+      "titulo": "Retrato Familiar con Vidrio Astillado",
+      "texto": "Una fotografía familiar en blanco y negro que muestra a una pareja de mediana edad y a sus dos hijos jóvenes frente a la fachada de esta misma casa. En las esquinas del papel fotográfico hay marcadas huellas dactilares con hollín y tierra. El vidrio del portarretratos está astillado en diagonal, como si hubiese golpeado el piso tras una caída violenta.",
+      "entrada_diario_asociada": "diario_introduccion"
+    },
+    {
+      "id_objeto": "doc_pasaporte_vencido",
+      "titulo": "Pasaporte de Jorge Giménez (Vencido)",
+      "texto": "REPÚBLICA ARGENTINA - PASAPORTE N° 1.482.903\nNombre: Jorge Giménez\nFecha de Nacimiento: 14 de Octubre de 1952\nEstado Civil: Soltero\nProfesión: Estudiante Universitario\n\n[SELLO DE TINTA ROJA EN LA ÚLTIMA PÁGINA]\nPOLICÍA DE FRONTERAS - EZEIZA\nFECHA: 24/02/1978\nESTADO: SALIDA DENEGADA / DECRETAR RETENCIÓN TEMPORAL\nAUTORIDAD FIRMANTE: JEFATURA DE SEGURIDAD N° 4",
+      "entrada_diario_asociada": "diario_jorge_pasaporte"
+    },
+    {
+      "id_objeto": "doc_lista_nombres",
+      "titulo": "Hoja Amarillenta con Anotaciones Cifradas",
+      "texto": "Clara (44-9021) -> R. (Aviso dado)\nTito (82-3315) -> TRASLADO (¿Confirmar destino?)\nGordo (47-1102) -> No contesta. Teléfono pinchado.\nMarta (s/n) -> En zona de resguardo.\n\n*Mantener silencio de radio absoluto a partir del miércoles. Si queman el contacto de Munro, reagrupar en el café de Av. del Libertador.*",
+      "entrada_diario_asociada": "diario_lista_cifrada"
+    },
+    {
+      "id_objeto": "doc_recorte_diario",
+      "titulo": "Recorte del Diario La Razón - Noviembre de 1979",
+      "texto": "SUBVERSIVOS ABATIDOS EN ENFRENTAMIENTO EN ZONA SUR\nEn la jornada de ayer, fuerzas combinadas del Ejército y la Policía Federal neutralizaron a tres elementos extremistas pertenecientes a una organización declarada ilegal. El hecho se produjo tras un nutrido intercambio de disparos en un domicilio de la localidad de Valentín Alsina, donde los sediciosos se ocultaban. En el lugar se incautó abundante material de adoctrinamiento y armas de calibre civil. Las identidades de los delincuentes subversivos se hallan bajo peritaje forense.",
+      "entrada_diario_asociada": "diario_recorte_prensa"
+    },
+    {
+      "id_objeto": "doc_carta_gimenez",
+      "titulo": "Carta Manuscrita de la Familia Giménez",
+      "texto": "Estimado Doctor:\n\nLe escribo estas líneas apuradas con la esperanza de que le lleguen a buenas manos. No nos van a alcanzar los años de vida para agradecerle el amparo y la protección que nos dio durante estos meses de pesadilla. El sótano bajo las tablas del living fue nuestro único refugio frente a la tormenta. Sin su silencio de radio y su coraje para no mirar para otro lado, el destino de los chicos hubiera sido trágico.\n\nRezamos por usted y por los suyos. Dios quiera que volvamos a vernos cuando aclare.\n\nAfectuosamente,\nFamilia Giménez (Marzo de 1979)",
+      "entrada_diario_asociada": "diario_carta_gimenez"
+    }
+  ],
+  "entradas_diario": [
+    {
+      "id_entrada": "diario_introduccion",
+      "titulo_diario": "El peso del polvo y la ausencia",
+      "texto_diario": "28 de Junio de 1980. Logré meterme en la casa de los Giménez. El ambiente está cargado, espeso, como si el aire mismo se negara a circular. El silencio te zumba en los oídos, che. Da la pauta de que el tiempo se congeló acá adentro la noche que entraron a reventar el lugar. Encontré el retrato familiar en el suelo. El marco roto, el vidrio hecho trizas. No fue un accidente doméstico; a esta gente la sacaron a los empujones y de los pelos. Tengo el estómago cerrado. Sé perfectamente que escribir esto es comprarse un boleto de ida al sur, pero alguien tiene que dejar registro de lo que las sombras se quieren tragar."
+    },
+    {
+      "id_entrada": "diario_jorge_pasaporte",
+      "titulo_diario": "El cepo en Ezeiza",
+      "texto_diario": "Encontré el pasaporte de Jorge, el hijo menor. Vencido, claro, pero lo que me hiela la sangre es el sello de tinta roja de la aduana: 'Salida denegada - Retención'. El pibe intentó rajarse en febrero del 78, en pleno delirio mundialista, cuando todo el país gritaba los goles de Kempes para no escuchar los gritos que venían de los sótanos. La guita y los contactos que habrán movido los viejos para conseguirle ese pasaporte, todo para terminar chocando contra la pared en Ezeiza. ¿Dónde te metieron, flaco? Si te agarró la Jefatura 4, no quiero ni pensar en qué calabozo estarás tirado."
+    },
+    {
+      "id_entrada": "diario_lista_cifrada",
+      "titulo_diario": "La timba de la muerte",
+      "texto_diario": "Apareció una hoja con nombres de pila, teléfonos y anotaciones cifradas. En esta época de paranoia, tener un papel así en el bolsillo es una condena a muerte. Si te para una patrulla y te encuentra esto, no hay explicaciones que valgan: vas derecho a un Falcon verde y a figurar en las listas de los que no están. Lo que me descompone es ver la palabra 'TRASLADO' al lado del nombre de Tito. A esta altura del partido, todos sabemos lo que significa ese eufemismo atroz en la jerga de los milicos. Significa que lo subieron a un camión o a un avión para no volver nunca más. Ojalá los otros hayan llegado a tiempo a la cita del Libertador."
+    },
+    {
+      "id_entrada": "diario_recorte_prensa",
+      "titulo_diario": "La mentira tipográfica",
+      "texto_diario": "Un recorte de prensa de La Razón sobre un supuesto 'enfrentamiento'. Qué cínicos que son, por el amor de Dios. Usan la misma plantilla de gacetilla que les dicta la SIDE: 'neutralizaron elementos subversivos'. Yo sé cómo se labura en las redacciones hoy en día; si no publicás la versión oficial con puntos y comas, terminás haciendo compañía a los peces en el Río de la Plata. Este supuesto tiroteo en Valentín Alsina no fue más que un fusilamiento camuflado para la opinión pública. Les metieron plomo por la espalda en un operativo clandestino y después inventaron la balacera."
+    },
+    {
+      "id_entrada": "diario_carta_gimenez",
+      "titulo_diario": "El santuario bajo las maderas",
+      "texto_diario": "Encontré una carta de los Giménez dirigida a un tal 'Doctor', el dueño anterior de esta tapera. Hablan de 'protección en el sótano'. Así que esta casa no era solo una vivienda familiar, era un aguantadero, un escondite. En medio de tanto vecino buchón, de alcahuetes de cuadra y de patrulleros merodeando a ciegas, hubo un tipo con los pantalones bien puestos que arriesgó el cuero y la profesión para encanutar a los chicos. Pero la carta tiene fecha de marzo del 79. Hoy estamos a mediados del 80, la casa está revuelta y no hay nadie. El final de la historia ya me lo veo venir... pero primero tengo que descubrir cómo corno se accede a ese sótano."
+    }
+  ]
+}
