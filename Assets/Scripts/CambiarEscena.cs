@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CambiarEscena : MonoBehaviour
@@ -7,6 +7,13 @@ public class CambiarEscena : MonoBehaviour
 
     public void Ir()
     {
-        SceneManager.LoadScene(sceneDestino);
+        if (SceneLoader.Instance != null)
+        {
+            SceneLoader.Instance.LoadScene(sceneDestino);
+        }
+        else
+        {
+            SceneManager.LoadScene(sceneDestino);
+        }
     }
 }

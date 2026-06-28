@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Hotspot : MonoBehaviour
@@ -22,7 +22,14 @@ public class Hotspot : MonoBehaviour
         if (sceneDestino != "")
         {
             Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-            SceneManager.LoadScene(sceneDestino);
+            if (SceneLoader.Instance != null)
+            {
+                SceneLoader.Instance.LoadScene(sceneDestino);
+            }
+            else
+            {
+                SceneManager.LoadScene(sceneDestino);
+            }
         }
     }
 }
