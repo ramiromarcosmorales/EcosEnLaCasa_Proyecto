@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class InventoryItemUser : MonoBehaviour
 {
@@ -12,6 +11,8 @@ public class InventoryItemUser : MonoBehaviour
     [SerializeField] private GameObject[] deactivateOnSuccess;
     [SerializeField] private string sceneToLoad;
 
+    private bool alreadyUsed;
+
     private void OnMouseDown()
     {
         UseRequiredItem();
@@ -19,6 +20,9 @@ public class InventoryItemUser : MonoBehaviour
 
     public void UseRequiredItem()
     {
+        if (alreadyUsed)
+            return;
+
         if (requiredItem == null)
         {
             Debug.LogWarning("No hay item requerido asignado.");
@@ -37,6 +41,8 @@ public class InventoryItemUser : MonoBehaviour
             return;
         }
 
+        alreadyUsed = true;
+
         if (consumeItemOnSuccess)
             InventoryManager.Instance.RemoveItem(requiredItem);
 
@@ -52,7 +58,16 @@ public class InventoryItemUser : MonoBehaviour
                 obj.SetActive(false);
         }
 
-        if (!string.IsNullOrEmpty(sceneToLoad))
-            SceneManager.LoadScene(sceneToLoad);
+        if (!string.IsNullOrWhiteSpace(sceneToLoad))
+        {
+            if (SceneLoader.Instance != null)
+            {
+                SceneLoader.Instance.LoadScene(sceneToLoad);
+            }
+            else
+            {
+                Debug.LogError("No se encontró SceneLoader. No se puede cargar la escena: " + sceneToLoad);
+            }
+        }
     }
 }

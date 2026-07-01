@@ -76,18 +76,29 @@ public class InventoryManager : MonoBehaviour
         if (item == null)
             return false;
 
-        bool removed = items.Remove(item);
+        int removedIndex = items.IndexOf(item);
 
-        if (removed)
+        if (removedIndex == -1)
+            return false;
+
+        items.RemoveAt(removedIndex);
+
+        if (SelectedIndex == removedIndex)
         {
-            if (SelectedIndex >= items.Count)
-                SelectedIndex = -1;
-
-            InventoryChanged?.Invoke();
-            SelectionChanged?.Invoke();
+            SelectedIndex = -1;
+        }
+        else if (removedIndex < SelectedIndex)
+        {
+            SelectedIndex--;
         }
 
-        return removed;
+        if (SelectedIndex >= items.Count)
+            SelectedIndex = -1;
+
+        InventoryChanged?.Invoke();
+        SelectionChanged?.Invoke();
+
+        return true;
     }
 
     public void ClickSlot(int index)
