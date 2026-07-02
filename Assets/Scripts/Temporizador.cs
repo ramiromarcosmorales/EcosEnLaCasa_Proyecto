@@ -1,11 +1,11 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Temporizador : MonoBehaviour
 {
     public static Temporizador Instance;
 
-    private float tiempoLimite = 3600f;
+    [SerializeField] private float tiempoLimite = 3600f;
     private float tiempoTranscurrido = 0f;
     private bool corriendo = false;
     private bool finalAlternativoDisparado = false;
@@ -19,11 +19,18 @@ public class Temporizador : MonoBehaviour
         }
         else
         {
-            // Destruye la instancia vieja y reemplaza con la nueva
-            Destroy(Instance.gameObject);
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
+            Destroy(gameObject);
         }
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     void Start()
@@ -42,6 +49,14 @@ public class Temporizador : MonoBehaviour
             corriendo = false;
             finalAlternativoDisparado = true;
             DispararFinalAlternativo();
+        }
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "MainMenu")
+        {
+            Destroy(gameObject);
         }
     }
 
