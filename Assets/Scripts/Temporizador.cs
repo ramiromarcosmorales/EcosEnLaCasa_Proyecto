@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class Temporizador : MonoBehaviour
 {
     public static Temporizador Instance;
 
-    private float tiempoLimite = 3600f; // 60 minutos en segundos
+    private float tiempoLimite = 3600f;
     private float tiempoTranscurrido = 0f;
     private bool corriendo = false;
     private bool finalAlternativoDisparado = false;
@@ -18,7 +19,10 @@ public class Temporizador : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            // Destruye la instancia vieja y reemplaza con la nueva
+            Destroy(Instance.gameObject);
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
     }
 
@@ -53,7 +57,7 @@ public class Temporizador : MonoBehaviour
         return tiempoTranscurrido;
     }
 
-    public bool EstaCorriendoo()
+    public bool EstaCorriendo()
     {
         return corriendo;
     }
@@ -63,4 +67,3 @@ public class Temporizador : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 }
-
